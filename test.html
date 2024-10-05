@@ -42,6 +42,7 @@
         }
         
         button {
+            top: 350px;
             width: 120px;
             height: 50px;
             margin: 10px;
@@ -51,6 +52,7 @@
             text-align: center;
         }
         input {
+            position: absolute;
             background-color: #bd97ad;
             width: 120px;
             height: 40px;
@@ -61,56 +63,55 @@
             
         }
         #to-do{
-            position: absolute;
-            top: 260px;  
-            left: 500px;
+            height: 30px;
+            width: 250px;
+            bottom: 150px;  
+            left: 0;
 
         }
+        .time {
+            top: 250px;  
+            width: 200px;
+        }
         #hour{
-            position: absolute;
-            top: 260px;  
-            left: 650px;
+            left: 420px;
 
         }
         #min{
-            position: absolute;
-            top: 260px;  
-            left: 800px;
+            left: 660px;
 
         }
         #sec{
-            position: absolute;
-            top: 260px;  
-            left: 950px;
+            left: 900px;
 
         }
         .timer{
             position: absolute;
-            top: 150px;
-            left: 650px;
-            font-size: 96px;
+            top: 120px;
+            left: 600px;
+            font-size: 108px;
             
         }
     </style>
 
 </head>
 <body>
-    <div style="color: #c11f7b;" class="timer" id="timer">00:00:00</div>
+    <div style="color: #f191c8;" class="timer" id="timer">00:00:00</div>
 
     <header> 
         <h1 id="logo">popdoro</h1> 
     </header>
 
 <div>
-    <button id="start button">start</button>
-    <button id="pause button">pause</button>
-    <button id="reset button">reset</button>
+    <button class="timerbutton">start</button>
+    <button class="timerbutton">pause</button>
+    <button class="timerbutton">reset</button>
 </div>
 <div>
     <input type="text" id="to-do" placeholder="to-do">
-    <input type="number" id="hour" placeholder="hours">
-    <input type="number" id="min" placeholder="min">
-    <input type="number" id="sec" placeholder="sec">
+    <input type="number" class="time" id="hour" placeholder="hours">
+    <input type="number" class="time" id="min" placeholder="min">
+    <input type="number" class="time" id="sec" placeholder="sec">
 
 </div>
 
