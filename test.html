@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> test </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+
+    <style>
+        
+        body {
+            background-image: url('https://cdnb.artstation.com/p/assets/images/images/043/163/227/original/augustin-cart-gif-lofi-final.gif?1636484521&dl=1');
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;     
+            height: 100vh;          
+            margin: 0;              
+            position: relative
+        }
+
+        .chewy-regular {
+        font-family: "Chewy", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+        #logo {
+            color: #d54396;
+            font-family: "Chewy", sans-serif;
+            font-size: 72px;
+            position: absolute;
+            top: 0;  
+            left: 0;  
+            margin: 0;
+            padding: 10px;
+        }
+        
+        button {
+            width: 120px;
+            height: 50px;
+            margin: 10px;
+            background-color: #d54396;
+            font-size: 24px;
+            font-family: "Chewy", sans-serif;
+            text-align: center;
+        }
+        input {
+            background-color: #bd97ad;
+            width: 120px;
+            height: 40px;
+            margin: 10px;
+            font-size: 24px;
+            font-family: "Chewy", sans-serif;
+            text-align: center
+            
+        }
+        #to-do{
+            position: absolute;
+            top: 260px;  
+            left: 500px;
+
+        }
+        #hour{
+            position: absolute;
+            top: 260px;  
+            left: 650px;
+
+        }
+        #min{
+            position: absolute;
+            top: 260px;  
+            left: 800px;
+
+        }
+        #sec{
+            position: absolute;
+            top: 260px;  
+            left: 950px;
+
+        }
+        .timer{
+            position: absolute;
+            top: 150px;
+            left: 650px;
+            font-size: 96px;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div style="color: #c11f7b;" class="timer" id="timer">00:00:00</div>
+
+    <header> 
+        <h1 id="logo">popdoro</h1> 
+    </header>
+
+<div>
+    <button id="start button">start</button>
+    <button id="pause button">pause</button>
+    <button id="reset button">reset</button>
+</div>
+<div>
+    <input type="text" id="to-do" placeholder="to-do">
+    <input type="number" id="hour" placeholder="hours">
+    <input type="number" id="min" placeholder="min">
+    <input type="number" id="sec" placeholder="sec">
+
+</div>
+
+
+</body>
+</html>
